@@ -1,0 +1,58 @@
+<html> 
+<head> 
+    <title>Body Mass Index</title>
+    <style>
+        .head{
+            gap:30;
+            position:absolute;
+            top:22%;
+            right:40%;
+            border: 5px black;
+            border-radius: 20px;
+            background: lavender;
+        }
+        input {
+            margin-top: 5px;
+            padding:5px;
+            border-radius: 20px;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: lavender;
+        }
+        form {
+            border-color: black;
+            border-radius: 20px;
+            width: 300px;
+        }
+        .submit{
+            color:lavender;
+            background-color: aqua;
+        }
+    </style> 
+</head> 
+<body>
+    <centre>
+    <div class="head">  
+            <h1>Body Mass Index</h1>
+            <h2>S.VISANIYA</h2> 
+            <h3>25017540</h3>
+    <form method="POST">
+{%csrf_token %}
+        <div class="formelt"> 
+        Height:<input type="text" id="Height" name="Height" required></input>in cm<br> 
+        </div> 
+        <div class="formelt"> 
+        Weight:<input type="text" id="Weight"name="Weight" required></input>in kg<br> 
+        </div> 
+        <div class="formelt"> 
+        <input class="submit" type="submit" value="Calculate BMI"><br/> 
+        </div> 
+        <div class="formelt"> 
+        BMI:<input type="text" name="bmi" value="{{bmi}}"></input>m<sup>2</sup><br> 
+        </div>
+    </form>
+    </div>
+    </div> 
+</body>
+</html>
