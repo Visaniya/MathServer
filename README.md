@@ -126,7 +126,7 @@ urlpatterns = [
     path('bmi/',views.calculate_bmi,name="bmi"),
     path('',views.calculate_bmi, name="bmicalculator"),
 ]
-
+```
 
 ## SERVER SIDE PROCESSING:
 Screenshot (27).png
